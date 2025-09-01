@@ -5,9 +5,9 @@ object pepe {
     var property bonoPresentismo = normal
     var property faltas = 0
 
-    method sueldo() = self.category().neto() + self.bonoResultados().bono(self) + self.bonoPresentismo().bono(self)
+    method sueldo() = self.neto() + self.bonoResultados().bono(self) + self.bonoPresentismo().bono(self)
 
-    //method neto() = category.neto()
+    method neto() = category.neto()
     
 }
 object gerente {

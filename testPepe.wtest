@@ -6,7 +6,7 @@ describe "Sueldo Pepe como cadete y presentismo normal" {
 	
 	test "funciona el bono con faltas" {
 		pepe.faltas(1)
-		assert.equals(1000, pepe.bonoPresentismo())
+		assert.equals(1000, pepe.bonoPresentismo().bono(pepe))
 	}
 	test "prueba 1" {
 		pepe.bonoResultados(montoFijo)
