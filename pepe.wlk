@@ -1,5 +1,4 @@
 object pepe {
-	object pepe {
     var property category = cadete // colaborador interno
     var property bonoResultados = bonoPorcentaje
     var property bonoPresentismo = normal
@@ -65,4 +64,24 @@ object demagogico {
             300
         }
     }
+}
+
+object sofia {
+    var property bonoResultados = nulo
+    var property categoria = cadete
+    method sueldo() = self.neto()*1.3 + self.bonoResultados().bono()
+
+    method neto() = categoria.bono()
+}
+
+## Nuevas Categorias
+object vendedor {
+    method neto() = 16000
+    method activarAumentoPorMuchasVentas() {}
+    method desactivarAumentoPorMuchasVentas(){}
+}
+object medioTiempo { // no te cacho una
+    method neto() =
+    method categoriaBase(empleado) = empleado.neto() / 2
+
 }

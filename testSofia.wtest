@@ -1,0 +1,6 @@
+import pepe.sofia.*
+
+describe "nombre" {
+    test "sofia" {
+    }
+}
